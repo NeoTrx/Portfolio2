@@ -169,10 +169,10 @@
 			
 			// Load STL file
 			var loader = new THREE.STLLoader();
-			loader.load('https://drive.google.com/uc?export=download&id=1Ok1qWuuwdGMGKIEczbkYu6WzQv8y12KC', function (geometry) {
-			var material = new THREE.MeshNormalMaterial();
-			var mesh = new THREE.Mesh(geometry, material);
-			scene.add(mesh);
+			loader.load('model.stl', function (geometry) {
+			    var material = new THREE.MeshNormalMaterial();
+			    var mesh = new THREE.Mesh(geometry, material);
+			    scene.add(mesh);
 			});
 			
 			// Render loop
