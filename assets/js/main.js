@@ -155,5 +155,30 @@
 
 			}
 		});
-
+			// Create a scene
+			var scene = new THREE.Scene();
+			
+			// Create a camera
+			var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+			camera.position.z = 5;
+			
+			// Create a renderer
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.getElementById('container').appendChild(renderer.domElement);
+			
+			// Load STL file
+			var loader = new THREE.STLLoader();
+			loader.load('model.stl', function (geometry) {
+			    var material = new THREE.MeshNormalMaterial();
+			    var mesh = new THREE.Mesh(geometry, material);
+			    scene.add(mesh);
+			});
+			
+			// Render loop
+			function animate() {
+			    requestAnimationFrame(animate);
+			    renderer.render(scene, camera);
+			}
+			animate();
 })(jQuery);
