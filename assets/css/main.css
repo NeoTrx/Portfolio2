@@ -2459,7 +2459,7 @@ input, select, textarea {
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			padding: 1em 0.75em;
 		}
 
 		table th {
@@ -3314,20 +3314,3 @@ input, select, textarea {
 			}
 
 	}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-th, td {
-    text-align: left;
-    padding: 20px;
-}
-th {
-    background-color: #f2f2f2;
-}
-td ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
