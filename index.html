@@ -157,6 +157,25 @@
 										<li>Within the software, after scanning the model, many streaks from background noise were hard not to get on a scan. This could be deleted afterwards, but it was necessary before combining the different scans.</li>
 									</ul>
 									<p>By 3D scanning an existing figure, time was saved in the development process by not having to make the figure from scratch; after the figure had been 3D scanned, an STL of the finished version was exported and ready to be used.</p>
+									<h4>Blender</h4>
+									<p>Blender was used to import the STL and make changes to prepare it for 3D printing. The model was split into four sections: the upper head, lower jaw, body and tail. This was so modifications could be made to allow jaw movement using a hinge and save time and risks of the print failing. The decision was to split the work between us to make the process faster and more efficient. The separation of the parts proved challenging at first as the first method attempted did not split the parts cleanly, meaning when making a new face, it was uneven and, therefore, would not glue to the other parts correctly. To overcome this, the bisect tool allowed for an even cut, meaning the parts fit back together perfectly. After splitting the parts, Logan focused on the head, I focused on the body, and Ben focused on the tail.</p>
+									<h5>Body</h5>
+									<p>The body initially had to be smoothed over to remove any sharp edges and ruggedness; this reduced the quality slightly and made the sharper edge for the spikes on the dragon smoother. Although it did lower the quality of some features, the change could be fixed and was worth the overall smoothing of the model. As the figure was initially designed to go on a stand, a hole was left in the lower portion of the body that needed to be filled. Filling this hole proved challenging, and the first method of attempting to fix the hole was using the fill and smooth sculpting tools; however, the hole tore and clipped in places. The technique to fill the hole was to select all the vertices around it and fill it with a face; using this face as a base, the sculpting tools could smooth around the area to make the hole almost unnoticeable. As the head and tail were separated from the body, both sides had to be filled by selecting the vertices and filling with a new face.</p
+									<h5>Head
+									<p>Getting the head to the desired shape proved challenging; multiple sculpting tools were used to achieve different effects.</p>
+									<ul>
+										<li>Fattening the head with the pinch tool to get the facial shape closer to the desired shape.</li>
+										<li>Creating definition with the draw tool.</li>
+										<li>Making the frills on top of the head more pronounced with the snake hook proved challenging, as elongating the frills would cause tearing and clipping.</li>
+										<li>Cleaning up the frills with the elastic deform tool.</li>
+										<li>Elongating horns with the snake hook tool proved challenging due to the horns tearing and clipping when stretched.</li>
+									</ul>
+									<p>After this was finished, the upper part of the head and the jaw had to be separated, as the plan was to use a hinge to move the jaw. Finally, the holes from detaching the head from the body and separating the jaw were filled in.</p>
+									<h5>Tail</h5>
+									<p>The tail was split into two different parts to allow the tail to wriggle left and right, using a binding screw to enable movement. However, this was proven too challenging to do as in Blender, the size of the holes could not be measured accurately. CAD tools could have been used to overcome this; however, this was proven impossible with time limitations and a lack of knowledge of the software. After realising this, it was too late to reattach the two tail parts and attach the tail to the body. This was because the parts had been slightly moved and would not perfectly align when attached back together, making small holes that could affect the 3D print, and as the body had been modified, an older version could not be used.</p>
+									<h5>Universal Challenge</h5>
+									<p>The separation of the parts proved challenging at first as the first method attempted did not split the parts cleanly, meaning when making a new face, it was uneven and, therefore, would not glue to the other parts correctly. To overcome this, the bisect tool allowed for an even cut, meaning the parts fit back together perfectly.</p>
+									
 								</div>
 							</section>
 							<section id="five">
